@@ -1,5 +1,10 @@
 body {
+    font-family: 'Poppins', sans-serif;
     border: 5px solid rgb(0, 0, 0);
+  }
+
+  h1, h2, p, li, a {
+    font-family: 'poppins', sans-serif;
   }
 
   .navbar-light .navbar-brand,
