@@ -2,6 +2,11 @@ body {
     border: 5px solid rgb(0, 0, 0);
   }
 
+  .navbar-light .navbar-brand,
+  .navbar-light .nav-link {
+      color: white !important;
+  }
+  
   /* Default styles for large devices (desktops/laptops) */
 .hero-section {
     height: 100vh;
