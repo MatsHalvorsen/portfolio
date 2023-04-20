@@ -2,6 +2,26 @@ body {
     border: 5px solid rgb(0, 0, 0);
   }
 
+  /* Default styles for large devices (desktops/laptops) */
+.hero-section {
+    height: 100vh;
+  }
+  
+  /* Styles for medium devices (tablets, landscape mobiles) */
+  @media (max-width: 992px) {
+    .hero-section {
+      height: 80vh;
+    }
+  }
+  
+  /* Styles for small devices (portrait mobiles) */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 60vh;
+    }
+  }
+  
+
   #home {
     min-height: 65vh;
     padding-top: 20px;
