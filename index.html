@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MH Portfolio</title>
-    <!-- Add Google Font Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Add Slick Slider CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <!-- Add jQuery and Slick Slider JS -->
+    <!-- Add smooth scroll CSS -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
   <body data-bs-spy="scroll">
-    <!-- your content here -->
+    <!-- Header and other sections here -->
+    
+    <!-- Add the rest of your JS files and scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
@@ -27,10 +33,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5zWeiVkE9RtyL15UuNzW4J4prVRNy1d4g+rzynxd" crossorigin="anonymous">
 
-    <script src="js/script.js"></script>
-  </body>
-</html>
+   
 
 
   <header>
@@ -44,16 +50,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </li>
           </ul>
         </div>
@@ -125,7 +133,8 @@
             <h2 class="text-center mb-4">Projects</h2>
             <div class="projects-carousel">
               <div class="project">
-                <h3 class="text-center mb-4">Daily Joke Site</h3>
+                <div class="project-text">
+                  <h3 class="text-center mb-4">Daily Joke Site</h3>
                 <p>The website features a simple and easy-to-use interface that is designed to deliver a daily dose of laughter to visitors.
                   <br><br>
                   The site features a collection of funny and sometimes controversial jokes, such as the one-liner "I've been in 15 school shootings 
@@ -134,18 +143,29 @@
                 <a href="https://github.com/MatsHalvorsen/daily-joke-site" target="_blank">View on GitHub</a>
                 <a href="https://matshalvorsen.github.io/daily-joke-site/" target="_blank" class="view-live">View Live</a>
               </div>
+              <div class="project-image">
+                <img src="./img/Screenshot 2023-04-21 at 15.11.40.png" alt="Daily Joke Site">
+              </div>
+            </div>
               <!-- Add more projects using the same structure -->
               <div class="project">
-                <h3 class="text-center mb-4">Landing Page: Interstellar Expeditions</h3>
+                <div class="project-text">
+                  <h3 class="text-center mb-4">Landing Page: Interstellar Expeditions</h3>
                 <p>I designed and coded the website using a combination of HTML, CSS, and JavaScript. The website features a sleek and modern design that is both visually appealing and user-friendly
                   <br><br>Throughout the website, I made sure to implement best practices for web development, such as using responsive design to ensure that the website is accessible and 
                   functional on different devices, including desktops, tablets, and mobile phones. I also made sure to optimize the website for fast 
                   loading times, using techniques such as image compression and minification of code..</p>
                 <a href="https://github.com/MatsHalvorsen/daily-joke-site" target="_blank">View on GitHub</a>
                 <a href="https://matshalvorsen.github.io/Interstellar-Expeditions/" target="_blank" class="view-live">View Live</a>
+                </div>
+                <div class="project-image">
+                  <img src="./img/Screenshot 2023-04-21 at 15.16.45.png" alt="Interstellar Expeditions">
+                </div>
               </div>
+              
               <div class="project">
-                <h3 class="text-center mb-4">Interactive Map</h3>
+                <div class="project-text">
+                  <h3 class="text-center mb-4">Interactive Map</h3>
                 <p>Explore the world without leaving your home with this interactive map!
                   <br><br>With just a few clicks, you can explore every country on Earth 
                   and learn interesting facts about their population, capital city, area, currency, and languages.
@@ -156,6 +176,9 @@
                   just looking for a fun and educational way to pass the time, this interactive map has got you covered!</p>
                 <a href="https://github.com/MatsHalvorsen/daily-joke-site" target="_blank">View on GitHub</a>
                 <a href="https://matshalvorsen.github.io/my-interactive-map/" target="_blank" class="view-live">View Live</a>
+              </div>
+              <div class="project-image">
+                <img src="./img/ar.png" alt="Interstellar Expeditions">
               </div>
             </div>
           </section>
