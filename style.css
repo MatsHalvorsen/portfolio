@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Poppins', sans-serif;
     border: 5px solid rgb(0, 0, 0);
@@ -15,9 +16,13 @@ body {
   .project {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 30px; 
   }
-
+  .project-wrap {
+    display: flex;
+    align-items: center;
+  }
+  
   .project-text {
     flex: 1;
   }
@@ -31,6 +36,14 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  .project h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+  
   
   /* Default styles for large devices (desktops/laptops) */
 .hero-section {
@@ -71,6 +84,18 @@ body {
     .hero-section {
       height: 60vh;
     }
+    .project-wrap {
+      flex-direction: column;
+    }
+  
+    .project-text {
+      padding-bottom: 1rem;
+    }
+  
+    .project-image {
+      width: 100%;
+      padding-left: 0;
+    }
   }
   
 
@@ -95,10 +120,6 @@ body {
     margin-bottom: 1rem;
     background-color: #f9f9f9;
     border-radius: 5px;
-  }
-  
-  .project h3 {
-    margin-top: 0;
   }
   
   .project a {
