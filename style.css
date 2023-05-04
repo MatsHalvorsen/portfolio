@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    border: 5px solid rgb(0, 0, 0);
+    /*border: 5px solid rgb(0, 0, 0);*/
   }
 
   h1, h2, p, li, a {
@@ -11,6 +11,13 @@ body {
   .navbar-light .navbar-brand,
   .navbar-light .nav-link {
       color: white !important;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
   }
 
   .project {
@@ -101,7 +108,7 @@ body {
 
   #home {
     min-height: 65vh;
-    padding-top: 20px;
+    padding-top: 57px;
   }
 
 
